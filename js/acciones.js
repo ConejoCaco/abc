@@ -1,9 +1,16 @@
-function agregarDiv(event) {
-    event.preventDefault();
-    var div = document.createElement("div");
-    div.classList.add("contenido");
-    div.innerHTML = "<h3>Contenido agregado dinamicamente</h3><p>Este es el contenido del div agregado al presionar el botón.</p>";
-    document.body.appendChild(div);
-  }
+var div = document.getElementById("porsiacaso");
 
-document.getElementById("elboton").addEventListener("click", agregarDiv);
+var divVisible = false;
+function mostrar(event) {
+    if (divVisible) {
+        div.style.display = "none";
+      } else{
+        div.style.display = "block";
+      }
+      divVisible = !divVisible;
+      event.preventDefault();
+      }
+    
+
+
+document.getElementById("elboton").addEventListener("click", mostrar);
