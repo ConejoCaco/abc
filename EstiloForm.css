@@ -1,0 +1,40 @@
+body {
+    background-image: url("Imagenes/fondo1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+  }
+  
+  #contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .formulario {
+    margin-top: 20px;
+   
+  }
+
+  .flod {
+    width: 500px;
+    height: 200px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button {
+    display: block;
+    margin: 0 auto;
+  }
